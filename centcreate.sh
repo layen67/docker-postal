@@ -42,6 +42,7 @@ git clone https://github.com/layen67/docker-postal.git
 cd docker-postal
 chmod +x /var/lib/docker/docker-postal/boot.sh
 docker-compose up -d
+sed -i -e "s/example.com/callcenter.fr.nf/g" /var/lib/docker/docker-postal/data/postal/postal.yml
 
 echo "Installing appropriate NeoRouter software..."
 test=`uname -a | grep x86_64`
