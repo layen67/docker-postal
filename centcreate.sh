@@ -31,7 +31,6 @@ pip install docker-compose
 
 # upgrade your Python packages:
 yum upgrade -y python*
-
 yum -y remove postfix
 
 chmod +x /etc/rc.d/rc.local
